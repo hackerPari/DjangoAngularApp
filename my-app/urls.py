@@ -21,6 +21,7 @@ from new_app.views import *
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^getData/', get_data),
+    url(r'^battles/', get_battles),
+    url(r'^battleDetails/', get_battle_details),
     url(r'^.*', TemplateView.as_view(template_name="home.html"), name="home")
 ]
