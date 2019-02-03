@@ -1,8 +1,8 @@
 from django.shortcuts import render, HttpResponseRedirect
 from django.http import HttpResponse, JsonResponse
 
-from new_app.models import ExampleModel, User, Battle
-from new_app.serializers import ExampleModelSerializer, BattleSerizlizer, BattleListSerializer
+from new_app.models import Battle
+from new_app.serializers import BattleSerizlizer, BattleListSerializer
 
 from django.views.decorators.csrf import csrf_exempt
 

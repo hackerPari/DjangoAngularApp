@@ -2,15 +2,6 @@ from django.db import models
 
 
 # Create your models here.
-class ExampleModel(models.Model):
-    firstname = models.CharField(max_length=200)
-    lastname = models.CharField(max_length=200)
-
-
-class User(models.Model):
-    id = models.IntegerField(primary_key=True)
-    first_name = models.CharField(max_length=500)
-    last_name = models.CharField(max_length=500)
 
 
 class Battle(models.Model):

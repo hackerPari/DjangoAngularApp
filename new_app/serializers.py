@@ -1,10 +1,5 @@
 from rest_framework import serializers
-from new_app.models import ExampleModel, User, Battle
-
-class ExampleModelSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = User
-        fields = ('first_name', 'last_name')
+from new_app.models import Battle
 
 class BattleSerizlizer(serializers.ModelSerializer):
     class Meta:
