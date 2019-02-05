@@ -23,5 +23,9 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^battles/', get_battles),
     url(r'^battleDetails/', get_battle_details),
+    url(r'^battleTypeAggregate/', get_aggregate_battle_type),
+    url(r'^attackerKingAggregate/', get_aggregate_active_attacker_king),
+    url(r'^defenderKingAggregate/', get_aggregate_active_defender_king),
+    url(r'^minMaxAvgDefenderSize/', get_min_max_average_defender_size),
     url(r'^.*', TemplateView.as_view(template_name="home.html"), name="home")
 ]
